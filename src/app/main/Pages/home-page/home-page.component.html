@@ -1,0 +1,60 @@
+<main>
+
+  <section class="sect_1">
+
+    <div class="sect_1_inline">
+
+      <div class="logo">
+        <img [src]="LogoIconURL">
+      </div>
+
+      <button class="news">
+        <i class="fa-solid fa-exclamation"></i>
+      </button>
+
+      <button class="sign_in">
+        <p>Sign Up</p>
+      </button>
+
+      <div class="title">
+        <h1>A</h1>
+        <h1>L</h1>
+        <h1>T</h1>
+        <h1>E</h1>
+        <h1>R</h1>
+      </div>
+
+      <div class="about">
+        <h4>QUESTION. ANALYZE. UNDERSTEND.</h4>
+      </div>
+
+
+      <button class="join_us">
+        <p>
+          Join Us
+        </p>
+      </button>
+
+      <div class="desc">
+        <p>Register, Add Stats, Track Progress. Elevate Your Journey with Our Simple, Powerful Platform.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="sect_2">
+
+    <div class="sect_2_inline_1">
+      <h1>დარჩი უსაფრთხოდ ქსელში ჩვენთან ერთად!</h1>
+    </div>
+
+    <div class="sect_2_inline_2">
+      <ng-container *ngFor="let item of cardData">
+        <app-navigation-card [Item]="item"/>
+      </ng-container>
+    </div>
+  </section>
+
+
+</main>

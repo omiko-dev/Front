@@ -1,0 +1,154 @@
+main .sect_1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../../assets/Images/home_bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+}
+main .sect_1 .sect_1_inline {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 3, 80, 0.77);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main .sect_1 .sect_1_inline .logo {
+  display: flex;
+  width: 100%;
+  height: min-content;
+  margin-top: 21px;
+  justify-content: center;
+  align-items: center;
+}
+main .sect_1 .sect_1_inline .logo img {
+  width: 212px;
+  height: 144px;
+}
+main .sect_1 .sect_1_inline .news {
+  position: absolute;
+  left: 0;
+  top: 213px;
+  width: 70px;
+  height: 60.423px;
+  flex-shrink: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: #C5FFF8;
+  border: none;
+}
+main .sect_1 .sect_1_inline .news i {
+  font-size: 36px;
+}
+main .sect_1 .sect_1_inline .sign_in {
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 99px;
+  height: 53.59px;
+  border: 5px solid #FFF;
+  background: none;
+}
+main .sect_1 .sect_1_inline .sign_in p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Bakbak One", sans-serif;
+  font-size: 18px;
+}
+main .sect_1 .sect_1_inline .sign_in:hover {
+  background-color: #348CBE;
+  transition: 0.4s ease-in-out;
+}
+main .sect_1 .sect_1_inline .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 256px;
+  height: 386.59px;
+  border: 9px solid #FFF;
+  margin-top: 34px;
+  padding-block: 18px;
+}
+main .sect_1 .sect_1_inline .title h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .sect_1 .sect_1_inline .about {
+  margin-top: 45px;
+}
+main .sect_1 .sect_1_inline .about h4 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .sect_1 .sect_1_inline .join_us {
+  margin-top: 30px;
+  width: 239.38px;
+  height: 68.275px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 7px solid #FFF;
+  background: #348CBE;
+}
+main .sect_1 .sect_1_inline .join_us p {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .sect_1 .sect_1_inline .desc {
+  width: 506px;
+  margin-top: 25px;
+}
+main .sect_1 .sect_1_inline .desc p {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+}
+main .sect_2 .sect_2_inline_1 {
+  height: 132px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #FFF 0%, #D5D5D5 100%);
+}
+main .sect_2 .sect_2_inline_1 h1 {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "Bakbak One", sans-serif;
+}
+main .sect_2 .sect_2_inline_2 {
+  height: 75vh;
+  width: 100%;
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
