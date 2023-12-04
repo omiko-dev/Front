@@ -1,0 +1,105 @@
+main
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background: #EAEAEA;
+
+  .goBack
+  {
+    cursor: pointer;
+    position: absolute;
+    top: 21px;
+    left: 45px;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    width: 94px;
+    height: 99px;
+  }
+
+  h1
+  {
+    margin-top: 50px;
+  }
+
+
+  section
+  {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .card
+    {
+      border: 1px solid;
+      border-top: 5px solid #171C56;
+      width: 400px;
+      height: 400px;
+
+      h1
+      {
+        margin-block: 17px;
+        margin-left: 36px;
+        color: #000;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      hr
+      {
+        margin-inline: 35px;
+      }
+
+      h2
+      {
+        margin-block: 17px;
+        margin-left: 36px;
+        color: #000;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      p
+      {
+        width: 226px;
+        color: #6C6C6C;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-left: 36px;
+      }
+
+      button
+      {
+        cursor: pointer;
+          margin-left: 35px;
+          margin-top: 16px;
+          border: none;
+          background: aqua;
+          padding: 12px;
+          border-radius: 35px;
+      }
+
+      button:hover
+      {
+        background: rgba(5, 165, 165, 0.579);
+        transition: .5s ease;
+      }
+
+    }
+
+
+  }
+
+}

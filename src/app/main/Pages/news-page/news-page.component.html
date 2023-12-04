@@ -1,0 +1,24 @@
+<main>
+
+  <img class="goBack" routerLink="/" src="../../../../assets/Images/ic_logo_blue.jpg">
+
+
+  <h1>სიახლეები</h1>
+
+
+  <section>
+    <div class="card" *ngFor="let i of articles">
+      <h1>{{i.title}}</h1>
+      <hr>
+
+      <h2>3 დეკემბერი</h2>
+
+      <div>
+        <p>{{i.info}}</p>
+      </div>
+
+      <button>სრულად ნახვა</button>
+    </div>
+  </section>
+
+</main>

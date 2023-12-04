@@ -7,6 +7,8 @@ import { StatisticPageComponent } from './main/Pages/statistic-page/statistic-pa
 import { ImageChackerPageComponent } from './main/Pages/image-chacker-page/image-chacker-page.component';
 import { LoginPageComponent } from './main/Pages/login-page/login-page.component';
 import { ProfilePageComponent } from './main/Pages/profile-page/profile-page.component';
+import { NewsPageComponent } from './main/Pages/news-page/news-page.component';
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -21,7 +23,9 @@ const routes: Routes = [
 
   { path: 'login', component: LoginPageComponent },
 
-  { path: 'profile', component: ProfilePageComponent }
+  { path: 'profile', component: ProfilePageComponent, canActivate:[AuthGuard] },
+
+  { path: 'news', component: NewsPageComponent },
 ];
 
 @NgModule({

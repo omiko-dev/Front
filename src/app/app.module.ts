@@ -17,6 +17,7 @@ import { LoginPageComponent } from './main/Pages/login-page/login-page.component
 import { LogInComponent } from './main/Pages/login-page/log-in/log-in.component';
 import { SignUpComponent } from './main/Pages/login-page/sign-up/sign-up.component';
 import { ProfilePageComponent } from './main/Pages/profile-page/profile-page.component';
+import { NewsPageComponent } from './main/Pages/news-page/news-page.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProfilePageComponent } from './main/Pages/profile-page/profile-page.com
     LogInComponent,
     SignUpComponent,
     ProfilePageComponent,
+    NewsPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [HttpService],

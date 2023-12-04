@@ -16,6 +16,13 @@ main .sect_1 .sect_1_inline {
   align-items: center;
   position: relative;
 }
+main .sect_1 .sect_1_inline .profile {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-size: 28px;
+}
 main .sect_1 .sect_1_inline .logo {
   display: flex;
   width: 100%;

@@ -1,12 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { ICard } from '../../Interfaces/icard';
 import { HttpService } from 'src/app/services/http.service';
+import { UserService } from 'src/app/services/user.service';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent {
+
   cardData: ICard[] = [
     {
       icon: '../../../../../assets//Images/ic_quiz.jpg',
@@ -30,7 +32,7 @@ export class HomePageComponent {
       icon: '../../../../../assets//Images/ic_news.jpg',
       title: 'სიახლეები',
       describe: 'ცრუ ინფორმაციასთან ერთად ჩვენ გთავაზობთ სიმართლეს.',
-      goPath: '',
+      goPath: 'news',
     },
   ];
 

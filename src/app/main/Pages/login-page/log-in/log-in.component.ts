@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ILogIn } from 'src/app/main/Interfaces/ILogIn';
 import { AuthService } from 'src/app/services/auth.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-log-in',
@@ -9,7 +10,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./log-in.component.scss'],
 })
 export class LogInComponent {
-  constructor(private auth: AuthService, private _router: Router) {}
+  constructor(private auth: AuthService, private _router: Router, private userServive: UserService) {}
   validator: boolean = false;
 
   email: string = '';
@@ -26,6 +27,9 @@ export class LogInComponent {
         (data) => {
           var token = data;
           localStorage.setItem('token', token);
+          this.userServive.getUser(token).subscribe((data) => {
+            this.userServive.USER = data
+          })
           this._router.navigate(['/'])
         },
         (err) => {

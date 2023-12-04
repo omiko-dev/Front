@@ -8,7 +8,7 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  User = null
+  USER!: IUser;
 
   getUser(token: string) {
     const Header = { Authorization: `Bearer ${token}` }

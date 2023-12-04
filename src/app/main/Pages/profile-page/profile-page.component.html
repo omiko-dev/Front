@@ -1,29 +1,45 @@
 <main>
 
   <img class="goBack" routerLink="/" src="../../../../assets/Images/ic_logo_blue.jpg">
+  <h1 class="name">პროფილი</h1>
 
   <section>
+
 
     <div class="info">
 
       <div class="user_info">
         <div class="img"></div>
-
         <div class="user_info_in">
-          <h3>Name: omiko</h3>
-          <h3>Write Articles: 2</h3>
-          <h3>Rating: 1</h3>
+          <h3>Name: {{data.name}}</h3>
+          <h3>Write Articles: {{data.point}}</h3>
+          <h3>Rating: none</h3>
         </div>
-
       </div>
-
+      <hr>
       <div class="user_articles">
 
+        <h1>სტატიები:</h1>
+
+        <div class="article_card">
+          <h3>axali abebi</h3>
+        </div>
       </div>
 
     </div>
 
     <div class="article">
+      <h1>დაწერე სტატია</h1>
+
+      <div class="fields">
+        <label for="title">სათაური</label>
+        <input class="title" type="text" name="title">
+
+        <label for="title">სტატია</label>
+        <input class="article_input" type="text" name="title">
+
+        <button>გაშვება</button>
+      </div>
 
     </div>
 
