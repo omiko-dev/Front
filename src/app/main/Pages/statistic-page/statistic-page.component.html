@@ -1,0 +1,27 @@
+<main>
+
+  <img class="goBack" routerLink="/" src="../../../../assets/Images/ic_logo_blue.jpg">
+
+  <a class="head">ქართლის ინტერნეტმედიის სტატისტიკა</a>
+
+  <div class="main">
+    <div class="board">
+      <div class="card_1">
+        <h4>მედია</h4>
+
+        <h4>სანდოობის რეიტინგი</h4>
+      </div>
+      <hr style="height: 1px;">
+
+      <div class="card" *ngFor="let item of mediaStatistic">
+        <div class="card_in">
+            <h4>{{item.name}}</h4>
+
+            <h4>{{item.rating}} / 5.0</h4>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+</main>

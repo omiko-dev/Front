@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .goBack {
+    cursor: pointer;
+    position: absolute;
+    top: 21px;
+    left: 45px;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    width: 94px;
+    height: 99px;
+  }
+
+
+  section
+  {
+    width: 60vw;
+    height: 70vh;
+    border: 10px solid #171C56;
+    border-radius: 15px;
+    display: flex;
+
+    app-log-in
+    {
+      width: 50%;
+      height: 100%;
+    }
+
+    app-sign-up
+    {
+      width: 50%;
+      height: 100%;
+    }
+
+
+  }
+
+}

@@ -1,0 +1,21 @@
+<main>
+
+  <img class="goBack" routerLink="/" src="../../../../assets/Images/ic_logo_blue.jpg">
+
+  <div class="title">
+    <h1>ქვიზები</h1>
+  </div>
+
+  <section>
+    <div *ngFor="let item of quizData; let i = index">
+      <div class="card">
+        <img [src]="quiz_images[i]" alt="" srcset="">
+        <div class="card_in">
+          <h3>{{ item.Title }}</h3>
+          <button [routerLink]="'/quizgame/' + item.Id">Start</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

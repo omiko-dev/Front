@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ICard } from '../../Interfaces/icard';
+import { HttpService } from 'src/app/services/http.service';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -11,19 +12,19 @@ export class HomePageComponent {
       icon: '../../../../../assets//Images/ic_quiz.jpg',
       title: 'ქვიზი',
       describe: 'შეასრულე ქვიზები და გაიღრმავე ცოდნა მედია წიგნიერებაში',
-      goPath: '',
+      goPath: 'quiz',
     },
     {
       icon: '../../../../../assets//Images/ic_image_screen.jpg',
       title: 'ფოტო ტესტერი',
       describe: 'შეამოწმე დაედითებულია თუ არა ნებისმიერი სურათი',
-      goPath: '',
+      goPath: 'image-checker',
     },
     {
       icon: '../../../../../assets//Images/ic_statistic.jpg',
       title: 'სტატისტიკა',
       describe: 'ქართული საინფორმაციო ვებსაიტების სტატისტიკა და შეფასება',
-      goPath: '',
+      goPath: 'statistic',
     },
     {
       icon: '../../../../../assets//Images/ic_news.jpg',

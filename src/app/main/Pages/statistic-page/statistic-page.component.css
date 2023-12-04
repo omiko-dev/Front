@@ -1,0 +1,88 @@
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #EAEAEA;
+  padding-top: 50px;
+  gap: 16px;
+}
+main .goBack {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  width: 110px;
+  height: 113px;
+}
+main a {
+  color: #000;
+  text-align: center;
+  font-family: Futura LT;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .main {
+  box-shadow: 0 0 100px -23px;
+  width: 43vw;
+  border-radius: 46px;
+  background: white;
+  height: 79vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+main .main .head {
+  font-size: 41px;
+  margin-top: 30px;
+}
+main .main hr {
+  width: 80%;
+  background: black;
+}
+main .main .board {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  gap: 16px;
+}
+main .main .board .card {
+  width: 105%;
+  height: 67px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+main .main .board .card h4 {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main .main .board .card_1 {
+  width: 67%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 411px;
+  margin-top: 5px;
+}
+main .main .board .card_1 h4 {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card_in {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}

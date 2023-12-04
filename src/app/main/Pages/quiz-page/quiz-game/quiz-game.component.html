@@ -1,0 +1,105 @@
+<section>
+
+  <i routerLink="/quiz" class="fa-solid fa-arrow-left"></i>
+
+  <div class="main">
+
+    <div class="card"  [ngStyle]="{'background-color': this.checkArray.includes(0) ? '#5754549e' : ''}">
+    <h3>
+      {{data[0].Question}}
+    </h3>
+
+      <aside>
+        <div
+        (click)="onClick(1, 0)" [ngStyle]="{'background-color': selectedAnswer1 === 1 ? 'green' : ''}">
+          <a>{{ data[0].Answer.get(1) }}</a>
+        </div>
+        <div
+        (click)="onClick(2, 0)" [ngStyle]="{'background-color': selectedAnswer1 === 2 ? 'green' : ''}">
+          <a>{{ data[0].Answer.get(2) }}</a>
+        </div>
+        <div
+        (click)="onClick(3, 0)" [ngStyle]="{'background-color': selectedAnswer1 === 3 ? 'green' : ''}">
+          <a>{{ data[0].Answer.get(3) }}</a>
+        </div>
+        <div
+        (click)="onClick(4, 0)" [ngStyle]="{'background-color': selectedAnswer1 === 4 ? 'green' : ''}">
+          <a>{{ data[0].Answer.get(4) }}</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="card" [ngStyle]="{'background-color': this.checkArray.includes(1) ? '#5754549e' : ''}">
+    <h3>
+      {{data[1].Question}}
+    </h3>
+
+      <aside>
+        <div (click)="onClick(1, 1)" [ngStyle]="{'background-color': selectedAnswer2 === 1 ? 'green' : ''}">
+          <a>{{ data[1].Answer.get(1) }}</a>
+        </div>
+        <div (click)="onClick(2, 1)" [ngStyle]="{'background-color': selectedAnswer2 === 2 ? 'green' : ''}">
+          <a>{{ data[1].Answer.get(2) }}</a>
+        </div>
+        <div (click)="onClick(3, 1)" [ngStyle]="{'background-color': selectedAnswer2 === 3 ? 'green' : ''}">
+          <a>{{ data[1].Answer.get(3) }}</a>
+        </div>
+        <div (click)="onClick(4, 1)" [ngStyle]="{'background-color': selectedAnswer2 === 4 ? 'green' : ''}">
+          <a>{{ data[1].Answer.get(4) }}</a>
+        </div>
+      </aside>
+    </div>
+
+        <div class="card" [ngStyle]="{'background-color': this.checkArray.includes(2) ? '#5754549e' : ''}">
+    <h3>
+      {{data[2].Question}}
+    </h3>
+
+      <aside>
+        <div (click)="onClick(1, 2)" [ngStyle]="{'background-color': selectedAnswer3 === 1 ? 'green' : ''}">
+          <a>{{ data[2].Answer.get(1) }}</a>
+        </div>
+        <div (click)="onClick(2, 2)" [ngStyle]="{'background-color': selectedAnswer3 === 2 ? 'green' : ''}">
+          <a>{{ data[2].Answer.get(2) }}</a>
+        </div>
+        <div (click)="onClick(3, 2)" [ngStyle]="{'background-color': selectedAnswer3 === 3 ? 'green' : ''}">
+          <a>{{ data[2].Answer.get(3) }}</a>
+        </div>
+        <div (click)="onClick(4, 2)" [ngStyle]="{'background-color': selectedAnswer3 === 4 ? 'green' : ''}">
+          <a>{{ data[2].Answer.get(4) }}</a>
+        </div>
+      </aside>
+    </div>
+
+        <div class="card" [ngStyle]="{'background-color': this.checkArray.includes(3) ? '#5754549e' : ''}">
+    <h3>
+      {{data[3].Question}}
+    </h3>
+
+      <aside>
+        <div (click)="onClick(1, 3)" [ngStyle]="{'background-color': selectedAnswer4 === 1 ? 'green' : ''}">
+          <a>{{ data[3].Answer.get(1) }}</a>
+        </div>
+        <div (click)="onClick(2, 3)" [ngStyle]="{'background-color': selectedAnswer4 === 2 ? 'green' : ''}">
+          <a>{{ data[3].Answer.get(2) }}</a>
+        </div>
+        <div (click)="onClick(3, 3)" [ngStyle]="{'background-color': selectedAnswer4 === 3 ? 'green' : ''}">
+          <a>{{ data[3].Answer.get(3) }}</a>
+        </div>
+        <div (click)="onClick(4, 3)" [ngStyle]="{'background-color': selectedAnswer4 === 4 ? 'green' : ''}">
+          <a>{{ data[3].Answer.get(4) }}</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+<!--  -->
+
+  <div class="finish" [ngStyle]="{'display': finishCheck == 4 ? 'flex' : 'none'}">
+
+    <img [src]="gifImagesURL[this.correctArray.length]" alt="" srcset="">
+    <h1>{{this.correctArray.length}} / 4 სწორი პასუხი</h1>
+    <h1 style="font-size: 21px; color: red; margin-inline: 32px; margin-top:30px">{{endCall[this.correctArray.length][0].text}}</h1>
+    <button routerLink="/quiz">უკან</button>
+  </div>
+
+</section>

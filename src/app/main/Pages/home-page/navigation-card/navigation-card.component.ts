@@ -21,7 +21,7 @@ import { ICard } from 'src/app/main/Interfaces/icard';
 
         <p>{{ Item.describe }}</p>
 
-        <button>
+        <button [routerLink]="Item.goPath">
           <p>შესვლა</p>
           <div class="border"></div>
         </button>
