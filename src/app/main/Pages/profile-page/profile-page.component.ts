@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IUser, UserService } from 'src/app/services/user.service';
+import { IArticle, IUser, UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-profile-page',
@@ -15,6 +15,29 @@ export class ProfilePageComponent {
     })
   }
 
+  articleData = {
+    title: '',
+    info: ''
+  }
+
   data!: IUser
+
+  publishArticle() {
+    var token = localStorage.getItem('token')
+    var article: IArticle = {
+      articleId: 0,
+      title: this.articleData.title,
+      describtion: '',
+      info: this.articleData.info,
+      likeCount: 0,
+    };
+
+    this.userService.publishArticle(token!, article).subscribe((data) => {
+      console.log(data);
+      this.articleData.info = '';
+      this.articleData.title = '';
+    })
+
+  }
 
 }

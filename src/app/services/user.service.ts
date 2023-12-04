@@ -18,6 +18,14 @@ export class UserService {
     });
   }
 
+  publishArticle(token: string, article: IArticle) {
+    const Header = { Authorization: `Bearer ${token}` };
+
+    return this.http.post('https://localhost:7178/api/User/publish', article, {
+      headers: Header
+    });
+  }
+
 }
 
 export interface IUser {
@@ -29,9 +37,9 @@ export interface IUser {
 }
 
 export interface IArticle {
-  id: number,
-  title: string,
-  describtion: string,
-  info: string,
-  likeCount: number,
+  articleId: number;
+  title: string;
+  describtion: string;
+  info: string;
+  likeCount: number;
 }

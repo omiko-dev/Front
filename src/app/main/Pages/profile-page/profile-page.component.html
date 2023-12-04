@@ -17,14 +17,14 @@
         </div>
       </div>
       <hr>
-      <div class="user_articles">
+      <!-- <div class="user_articles">
 
         <h1>სტატიები:</h1>
 
         <div class="article_card">
           <h3>axali abebi</h3>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -33,12 +33,12 @@
 
       <div class="fields">
         <label for="title">სათაური</label>
-        <input class="title" type="text" name="title">
+        <input class="title" type="text" name="title" [(ngModel)]="articleData.title">
 
         <label for="title">სტატია</label>
-        <input class="article_input" type="text" name="title">
+        <input rows="4" cols="2" style="padding: 15px; padding-bottom: 300px" class="article_input" type="textarea" name="title" [(ngModel)]="articleData.info">
 
-        <button>გაშვება</button>
+        <button style="cursor: pointer;" (click)="publishArticle()">გაშვება</button>
       </div>
 
     </div>

@@ -47,7 +47,7 @@ main section .info .user_info .img {
   height: 150px;
   border: solid 1px;
   border-radius: 50%;
-  background-image: url("../../../../assets/Images/ic_news.jpg");
+  background-image: url("../../../../assets/Images/user_bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -99,14 +99,21 @@ main section .article .fields {
 }
 main section .article .fields .title {
   padding-block: 10px;
-  padding-inline: 80px;
+  padding-inline: 15px;
+  width: 350px;
 }
 main section .article .fields .article_input {
   padding-block: 177px;
 }
 main section .article .fields button {
+  border-radius: 45px;
   border: none;
-  background: aqua;
+  background: #4459B2;
   padding-block: 8px;
-  border-radius: 35px;
+  color: white;
+  font-size: 18px;
+}
+
+input {
+  outline: none;
 }

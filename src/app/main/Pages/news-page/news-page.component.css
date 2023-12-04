@@ -23,6 +23,9 @@ main h1 {
 main section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 156px;
+  margin-top: 51px;
 }
 main section .card {
   border: 1px solid;

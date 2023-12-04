@@ -12,7 +12,10 @@ export class NewsPageComponent {
   constructor(private httpService: HttpService) {
     this.httpService.getArticles().subscribe((data) => {
       this.articles = data
+      console.log(data);
+
     })
+
   }
 
   articles!: IArticle[]

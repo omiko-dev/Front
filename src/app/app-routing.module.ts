@@ -9,6 +9,7 @@ import { LoginPageComponent } from './main/Pages/login-page/login-page.component
 import { ProfilePageComponent } from './main/Pages/profile-page/profile-page.component';
 import { NewsPageComponent } from './main/Pages/news-page/news-page.component';
 import { AuthGuard } from './guard/auth.guard';
+import { InfoPageComponent } from './main/Pages/info-page/info-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -26,6 +27,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfilePageComponent, canActivate:[AuthGuard] },
 
   { path: 'news', component: NewsPageComponent },
+
+  { path: 'news/:id', component: InfoPageComponent }
 ];
 
 @NgModule({
